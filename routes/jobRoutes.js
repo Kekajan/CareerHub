@@ -12,6 +12,6 @@ router.post('/createJob', createJob)
 router.get('/getJobs', getJobs)
 router.get('/getJob/:id', getJobById)
 router.put('/updateJob/:id', updateJob)
-router.delete('/deleteJob', deleteJob)
+router.delete('/deleteJob/:id', deleteJob)
 
 export default router;
