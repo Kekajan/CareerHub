@@ -67,7 +67,7 @@ const signIn = async (req, res) => {
 
 const changePassword = async (req, res) => {
   try {
-    const userId = req.params;
+    const { userId } = req.params;
     const { currentPassword, newPassword } = req.body;
 
     const user = await User.findById(userId);
